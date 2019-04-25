@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="449.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.ChatStageController">
+   <children>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="18.0" layoutY="20.0" prefHeight="355.0" prefWidth="536.0" vvalue="1.0">
+         <content>
+            <TextFlow id="textFlow" fx:id="chatArea" prefHeight="348.0" prefWidth="536.0" style="-fx-background-color: white;" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="sendButton" layoutX="567.0" layoutY="392.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="173.0" text="Send" />
+      <TextArea id="messageArea" fx:id="sendMessageTextArea" layoutX="15.0" layoutY="390.0" prefHeight="33.0" prefWidth="536.0" />
+      <TextArea id="userTextArea" fx:id="usersArea" editable="false" layoutX="567.0" layoutY="20.0" prefHeight="301.0" prefWidth="173.0" />
+      <Button layoutX="567.0" layoutY="338.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="173.0" text="Exit" />
+   </children>
+</AnchorPane>
